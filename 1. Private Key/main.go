@@ -71,5 +71,7 @@ func main() {
 	ekch, _ := hex.DecodeString(ekc) // string to hex
 	// 7. Base58 Encoding
 	wifKey := Encode([]byte(ekch))
-	println(wifKey) // Wallet Import Format Private Key
+	fmt.Println("Private Key :" + fmt.Sprintf("%x", b))
+	fmt.Println("Extend Private Key :" + ekc)
+	fmt.Println("Wallet Import Formate (WIF) Private Key :" + wifKey) // Wallet Import Format Private Key
 }
